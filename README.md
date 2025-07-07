@@ -11,18 +11,19 @@ This demo was featured in the AWS Live Streaming session Let’s Talk about Data
 Watch the full presentation here: [AWS Live Streaming: Responsible AI Demo](https://community.aws/content/2v69uTxDsCUNr2tF2VgMbd487RF/unveiling-hidden-biases-a-hands-on-llm-analysis)
 
 ## Overview
-This repository contains a demo that showcases how different Large Language Models (LLMs) respond to the same prompts, with a focus on evaluating and mitigating bias in their outputs. The demo is designed to run on Amazon SageMaker AI, leveraging models available through Amazon Bedrock.
+This repository contains a demo that showcases how different Large Language Models (LLMs) respond to the same prompts, with a focus on evaluating and mitigating bias on their outputs. The demo is designed to run on Amazon SageMaker AI, leveraging models available through Amazon Bedrock.
 
-The demo consists of two main parts: **text-to-text** and **text-to-image**. In the **text-to-text** part, the models are prompted with a question about a specific topic, and they generate responses. Further prompts ask the models to evaluate the bias on their outputs and reiterate on the replies eliminating possible bias found. The **text-to-image** part involves generating images based on prompts related to the same topic.
+The demo consists of two main parts: **text-to-text** and **text-to-image**. In the **text-to-text** part, different models are prompted with the same sentence and asked to complete it. Further prompts ask the models to evaluate the bias on their own outputs and reiterate on the replies eliminating possible bias. The **text-to-image** part involves requesting different models to generate images based on the same prompt.
 
-The purpose of this demo is to show how different models reply to the same prompt and do a qualitative evaluation on the bias outputs and how to mitigate it. The demo is not intended to be a comprehensive analysis of bias in LLMs, but rather a starting point for understanding how different models can exhibit different biases and how to address them.
+This demo demonstrates how different models respond to identical prompts and provides a qualitative evaluation of bias in their outputs, along with mitigation strategies. While not intended as a comprehensive analysis of LLM bias, it serves as a starting point for understanding how models can exhibit varying biases when given the same prompt and offers approaches to address these issues.
 
 ## Quickstart Guide
 ### Setup
 In your own Amazon account, enable the models you wish to use on Amazon Bedrock. [See the models used](#models-used) in this demo in the table below. From the list, only Dall-E 3 is **NOT** accessible through Bedrock and requires an API key.
 
 ### Run the code
-Then, create a notebook on SageMaker AI, we are using an `ml.t2.medium` instance. You are now ready to copy and paste the code given in this repository to run the application.
+Create a notebook on SageMaker AI. We are using an `ml.t2.medium` instance. Once this is done, you are now ready to copy and paste the code in this repository and run the application.
+The real fun is to play with the prompts and see how different models respond to the same input. Try it out!
 
 ## Models used
 For the text-to-text part of this demo, we used the following models:

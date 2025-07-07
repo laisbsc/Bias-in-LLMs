@@ -1,6 +1,6 @@
 # Bias-in-LLMs
 Demo for AWS Live Streaming on Responsible AI
-> This demo was built by [@kyrillospan](https://github.com/kyrillospan).
+> This demo was built in collaboration with by [@kyrillospan](https://github.com/kyrillospan).
 
 This code uses Amazon SageMakerAI to run prompts to different Large Language Models (LLMs) linked to it via Amazon Bedrock.
 The purpose of this demo is to show how different models reply to the same prompt and do a qualitative evaluation of how bias the outputs are.
